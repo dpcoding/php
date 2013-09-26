@@ -1,0 +1,7 @@
+1	goodm@lanecc.edu	test	Marilou	Good	(541) 463-5838	CIT Dept, Lane Community College	Eugene	OR	97405
+2	mousem@disney.com	test	mickey	mouse	(111) 222-3333	101 Main Street	Orlando	FL	11111	
+15121	mousems@disney.com	test	minnie	mouse	(111) 999-9999	101 Main	Orlando	FL	11111
+26488	mmouse@disney.com	test							
+12277	gogo@yahoo.com	gogogo	gogo	gogo	12344678	50 Go St.	Eugene	OR	97405
+20083	bob@yahoo.com	bobbob	Bob	Bob	1234567	Bob St.	Bob City	OR	97405
+26911	dylan@yahoo.com	gogogo	Dylan	Pan	1234567890	50 GoGoGo St.	GoGoGo	OR	12345

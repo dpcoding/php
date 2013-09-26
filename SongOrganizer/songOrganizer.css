@@ -1,0 +1,62 @@
+body
+{
+	font-family: Arial, sans-serif;
+	background-color: #D4D1C5;
+}
+
+h1
+{
+	text-align: center;
+}
+
+.container
+{
+	margin: 0 auto;
+	width: 730px;
+}
+
+table 
+{
+	background-color: #E6E4DD;
+	border: 1px solid black;
+}
+
+table, td
+{
+	border:1px solid black;
+	width: 100%;
+}
+
+input[type="text"]
+{
+	padding: 2px;
+}
+
+input[type="submit"], input[type="reset"]
+{
+	padding: 5px 15px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	font-size: .8em;
+	font-weight: bold;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover 
+{
+	background: #A1A1A1;
+}
+
+.action
+{
+	padding-top: 5px;
+	float: right;
+	text-align: right;
+	
+}
+
+.action a
+{
+	margin-top: 5px;
+}
