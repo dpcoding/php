@@ -1,0 +1,29 @@
+<h2>Contact Me</h2>
+<p>This is the page where people can use a Web form to send 
+me an e-mail.</p>
+
+<form name="harvest" action="harvestemail.php" method="post">
+	<p>Enter the content you would like harvest from:<br /> 
+		<textarea name="Input"><?php echo $Input; ?>
+			</textarea>
+		<span style="color:red"><?php echo $errorMessage; ?></span>
+	</p>
+<!--
+	<p>Your E-mail: 
+			<input type="text" name="Email" value="<?php echo $Email; ?>" />
+			<span style="color:red"><?php echo $errorMessage; ?></span>
+		</p>
+		<p>Subject: 
+			<input type="text" name="Subject" value="<?php echo $Subject; ?>" />
+			<span style="color:red"><?php echo $errorMessage; ?></span>
+		</p>-->
+
+	<p>Output:<br />
+		<textarea name="Output"><?php echo $Output; ?>
+		</textarea>
+	</p>
+	<p>
+		<input type="reset" value="Clear Form" />&nbsp; &nbsp;
+		<input type="submit" name="Submit" value="Harvest" />
+	</p>
+</form>
