@@ -110,7 +110,7 @@
 	function loginsql($userName, $password)
 	{
 		//$db = db_connect("localhost", "root", "", "event_calendar"); for local use
-		$db = mysql_connect("localhost", "eventCalUser", "NQ13vg!p", "event_calendar");
+		//$db = mysql_connect(); login info removed
 		$sql = "SELECT user_id, user_name, user_fname, user_password FROM event_user WHERE user_name = '$userName' AND user_password = '$password'";
 		$result = mysql_query($sql, $db);
 		if ($result === false)
