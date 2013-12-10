@@ -1,13 +1,9 @@
 <?php
 	session_start();
-	//$_SESSION['userId'] = 3; // will need to comment it out when getting userId
 	//$_SESSION['userId'] = $_POST['userId']; //comment it out because it has been defined in indexLogin.inc.php
 	//$_SESSION['userName'] = "dylanPan";
 	//$_SESSION['userName'] = $_POST['userName'];
 	$_SESSION['sortKey'] = null;
-	
-	//echo those to see what I get
-	
 	
 	//$fields = array("eventID", "userId", "eventDate", "eventTitle", "eventDescription");
 	$fields = array('event_id', 'event_user_id', 'event_title', 'event_date', 'event_description');
@@ -43,7 +39,9 @@
 				return true;
 			}
 			else
+			{
 				return false;
+			}
 		}
 	</script>
 </head>
@@ -65,8 +63,8 @@
 	try
 	{
 		// need to call function connecing the database here first and close in the end
-		//$db = db_connect("localhost", "root", "", "event_calendar");
-		$db = mysql_connect("localhost", "eventCalUser", "NQ13vg!p", "event_calendar");//For citstudent db
+		$db = db_connect("localhost", "root", "", "event_calendar");
+		// removed $db for connecting citstudent.edu db
 		if ($result === false)
 			throw new Exception("Can't run sql statement: $sql " . mysql_error());
 		$sql = "Select * from event"; // I think here needs to join to get user_name
